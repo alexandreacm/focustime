@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "focustime-demo",
-    "slug": "snack-adaf790f-e03c-4ba6-a2f4-7428bb54fd84",
+    "slug": "focustime",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alexandreacm.focustime"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.alexandreacm.focustime"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "14787cd6-10d3-4b96-90b4-8a194c217b2b"
+      }
     }
   }
 }
