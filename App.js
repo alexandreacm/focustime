@@ -11,6 +11,8 @@ import { Focus } from './src/features/Focus';
 import { Timer } from './src/features/Timer';
 import { FocusHistory } from './src/features/FocusHistory';
 
+const isAndroid = Platform.OS === 'android' ? StatusBar.currentHeight : 0;
+
 export default function App() {
   const [currentSubject, setCurrentSubject] = useState();
   const [history, setHistory] = useState([]);
@@ -20,6 +22,10 @@ export default function App() {
   const onTimerEnd = (subject) => {
     setHistory([...history, subject]);
   };
+
+  const onClearSubject = () => {
+    setCurrentSubject(null);
+  }
 
   return (
     <>
@@ -38,7 +44,7 @@ export default function App() {
           <Timer
             focusSubject={currentSubject}
             onTimerEnd={onTimerEnd}
-            clearSubject={() => setCurrentSubject(null)}
+            clearSubject={onClearSubject}
           />
         )}
       </SafeAreaView>
@@ -49,7 +55,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+    paddingTop: isAndroid,
     backgroundColor: colors.blueDark,
   },
 });

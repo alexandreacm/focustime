@@ -2,9 +2,10 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { colors } from '../utils/colors';
 import { fontSizes, spacing } from '../utils/sizes';
+import NoItem from '../components/NoItem';
 
 export const FocusHistory = ({ history }) => {
-  if (!history || !history.length) return <Text style={styles.noItem}>Things We have not focused on anything</Text>;
+  if (!history || !history.length) return <NoItem />
 
   const renderItem = ({ item }) => <Text style={styles.item}>- {item}</Text>;
 
@@ -32,10 +33,5 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontSize: fontSizes.md,
     fontWeight: 'bold',
-  },
-  noItem: {
-    color: '#FF0000',
-    textAlign: 'center',
-     fontSize: 12,
   }
 });

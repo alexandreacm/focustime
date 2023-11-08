@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Platform } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
 import { RoundedButton } from '../components/RoundedButton';
 import { spacing } from '../utils/sizes';
@@ -13,6 +13,7 @@ export const Focus = ({ addSubject }) => {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.textInput}
+          value={subject}
           onChangeText={setSubject}
           label="What would you like to focus on?"
         />
