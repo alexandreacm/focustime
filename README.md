@@ -1,11 +1,94 @@
-# Sample Snack app
+<h1 align="center">
+  <img alt="" height="80" title="" src=".github/logo.svg" />
+</h1>
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=E51C44&labelColor=0A1033">
+</p>
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+![cover](.github/cover.png?style=flat)
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+![cover](.github/meals-to-go-architecture.png?style=flat)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## 💻 Project
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+An example of application to meals to go.
+
+# Team
+
+- Here must contain the names of everyone in the team, at the moment that
+  project is created
+  - Developer: Alexandre Marques
+  - Scrum Master: XXXX XXXX
+
+# To Navigation
+
+To navigation, We are using @react-navigation/native V5 as the main library.
+
+# To Stylization
+
+To styling issues, we use styled-components as the main library.
+
+## Features
+
+- [ ] Authentication;
+- [ ] Register User;
+- [ ] Favorite Restaurants;
+- [ ] Detail Restaurant;
+- [ ] View Restaurants on the map;
+
+## ✨ Technologies
+
+- [ ] Expo CLI
+- [ ] Expo Vector Icons
+- [ ] React Navigation V5
+- [ ] Context API
+- [ ] Firebase
+- [ ] lottie-react-native
+- [ ] react-native-maps
+- [ ] react-native-paper
+- [ ] styled-components
+
+## Running the project
+
+Use **yarn** or **npm install** to install project dependencies. Then start the
+project.
+
+```cl
+npx expo start
+```
+
+## Running the tests
+
+Use **yarn jest -u** or **yarn test** to execute the jest tests.
+
+```cl
+yarn jest or yarn test
+```
+
+<br />
+
+# Project Structure
+
+```bash
+├── assets
+│   └── fonts
+│   └── icons
+│   └── images
+├── components
+├── hooks
+├── navigation
+├── screens
+├── services
+├── styles
+    └── theme
+        └── colors
+        └── fonts
+        └── spacings
+        └── sizes
+├── utils
+```
+
+<div align="center">
+  <small>Developed By Alexandre Marques - 2023/Out</small>
+</div>
